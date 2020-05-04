@@ -1,0 +1,85 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="survey.css" type="text/css">
+</head>
+<body>
+<div id="head">
+    <h1 id="title">TEOH Kenya survey Form</h1>
+    <p id="description">
+        <em>Thank you for taking your time to help us improve our services</em>
+    </p>
+</div>
+<form id="survey-form">
+    <p>
+        <label id="name-label">Name:<br>
+            <input type="text" id="name" placeholder="name" required>
+        </label>
+    </p>
+    <p>
+        <label id="email-label">Email:<br>
+            <input type="email" id="email" placeholder="email" required>
+        </label>
+    </p>
+    <p>
+        <label id="number-label">Age:<br>
+            <input type="number" id="number" placeholder="age" min="15" max="25">
+        </label>
+    </p>
+    <p>
+        <label>What kind of service were you offered?<br>
+            <select id="dropdown">
+                <option>Windows installation</option>
+                <option>Windows/office activation</option>
+                <option>Office installation</option>
+                <option>Adobe product installation</option>
+                <option>Posters creation</option>
+            </select>
+        </label>
+    </p>
+    <div>
+        Would you recommend TEOH to a friend?<br>
+        <label>
+            <input id="box" name="recommend" type="radio" value="very Strongly" checked>Very strongly<br>
+        </label>
+        <label>
+            <input id="box" name="recommend" type="radio" value="Strongly">Strongly<br>
+        </label>
+        <label>
+            <input id="box" name="recommend" type="radio" value="maybe">Maybe<br>
+        </label>
+        <label>
+            <input id="box" name="recommend" type="radio" value="Not sure">Not sure<br>
+        </label>
+        <label>
+            <input id="box" name="recommend" type="radio" value="Not at all">Not at all<br><br>
+        </label>
+    </div>
+    <div>
+        What would you like improved?<br>
+        <label>
+            <input id="box" name="improve" type="checkbox" value="Customer relation">Customer relation<br>
+        </label>
+        <label>
+            <input id="box" name="improve" type="checkbox" value="Skill base">Skill base<br>
+        </label>
+        <label>
+            <input id="box" name="improve" type="checkbox" value="Quality of service">
+            Quality of service<br>
+        </label>
+    </div>
+    <p>
+        <label>Any Suggestions or Comments?<br>
+            <textarea name="comments" id="comments"></textarea>
+        </label>
+    </p>
+    <p>
+        <input id="submit" type="submit" name="submit" value="Submit">
+    </p>
+</form>
+</body>
+</html>
